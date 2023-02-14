@@ -1,4 +1,4 @@
-# Tensor-Decomposition
+# Tensor-Decomposition and its Application
 
 Data visualization is commonly used to help abstract out and interpret the useful information in a dataset. But the visualization of multi-dimensional data is still difficult. Tensor decomposition is capable of breaking a multi-way tensor down to different components of low rank tensors, so the visualization of a tensor's components will be a good substitution since the important features are contained in these components. 
 
@@ -25,4 +25,23 @@ Here is an example graph comparing computational cost and loss against model ran
 ## Conclusion
 - When working with higher order data, CP decomposition shows a linear increase in computational time as the model rank increases; while Tucker decomposition runs constantly fast. 
 - The increase in the order of CP decomposition model does not ensure the decrease in data loss; instead, the loss shows an increasing trend. On the other hand, a larger rank of the core tensor results in lower loss. 
+- Taking the Frobenius norm of difference of approximated tensor and original tensor over the norm of original tensor as ratio of maintained information, Tucker decomposition model with a $R$ value of 20 gives $ratio = 0.9941$, a $R$ value of 20 gives $ratio = 0.9984$, and a $R$ value of 60 gives $ratio = 0.9995$. 
 - Overall, CP decomposition performs well extracting and visualizing different modes in a tensor by analyzing the decomposed matrices separately, and it can successfully extract the extra factor when a new one is added to the original data. But for a higher order tensor CP decomposition shows a much worse result compared with Tucker decomposition no matter in terms of loss or running time. 
+
+
+## References used in the paper (final draft in progress)
+[1] Andersson, Claus A, and Rasmus Bro. “The N-Way Toolbox for MATLAB.” Chemometrics and Intelligent Laboratory Systems, vol. 52, no. 1, 2000, pp. 1–4.
+
+[2] Carroll, J. Douglas and Jih Jie Chang. “Analysis of individual differences in multidimensional scaling via an n-way generalization of “Eckart-Young” decomposition.” Psychometrika 35 1970, pp. 283-319.
+
+[3] B. Chen, A. Petropolu, and L. De Lathauwer. "Blind identification of convolutive MIM systems with 3 sources and 2 sensors." Applied Signal Processing} 2002, pp. 487–496. 
+
+[4] Rahmani, Dhouha, and Haïfa Nakouri. “Robust Handwritten Digit Classification Using Tensors Decomposition.” Mining Intelligence and Knowledge Exploration 2020, pp. 260–269. 
+
+[5] Kolda, Tamara. “Multilinear Operators for Higher-Order Decompositions.” 2006.
+
+
+[6] Brunton, Steven L., and J. Nathan Kutz. “Singular Value Decomposition (SVD).” Data-Driven Science and Engineering Machine Learning, Dynamical Systems, and Control. Cambridge University Press 2022, pp. 41–46. 
+
+[7] Kolda, Tamara G., and Brett W. Bader. “Tensor Decompositions and Applications.” SIAM Review, vol. 51, no. 3, 2009, pp. 455–500. 
+Andersson, Claus A, and Rasmus Bro. “The N-Way Toolbox for MATLAB.” Chemometrics and Intelligent Laboratory Systems, vol. 52, no. 1, 2000, pp. 1–4.. 
