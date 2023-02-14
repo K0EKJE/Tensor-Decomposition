@@ -13,7 +13,7 @@ An example output is
 
 ![image](https://github.com/K0EKJE/Tensor-Decomposition/blob/main/example_outputs/3c8e4eee564b8d3e6ce108936c2eee4.png)
 
-The second half of the research focuses on image compression problem with different tensor decomposition mathods and different model tank. From low rank to high rank tucker model, the reconstructed image tends to be more clear.  
+The second half of the research focuses on image compression problem with different tensor decomposition mathods and different model tank. The idea is that tensor decomposition is able to decompose the image data into different components, and a compressed version will be obtained by reconstructing the tensor from the components. The rank determines the size of the components, the smaller the size, the more we free the storage cost, but quality will drop in the mean time. From low rank to high rank tucker model, the reconstructed image tends to be more clear.  
 
 ![image](https://github.com/K0EKJE/Tensor-Decomposition/blob/main/example_outputs/d56cae0a9173be485dd812a0fd3f5a7.png)
 
