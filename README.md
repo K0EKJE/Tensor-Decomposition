@@ -4,6 +4,7 @@ Data visualization is commonly used to help abstract out and interpret the usefu
 
 The following section introduces the function used to generate the artificial tensor. The two spatial-temporal functions are generated from two and three factors, respectively, and the three factor model simple adds a second degree term as a new mode for dimension x and y. Each factor is constructed from several terms including exponential, Hermite, trigonometric, and hyperbolic functions. They are defined as follow
 $G_n(Z,X,Y,T) = F_{n}(Z) * cos(\frac{3}{2}T)+(sech (X) * tanh \left( X\right)  * e^{-0.2Y^2}) *sin T$
+
 $G_n(Z,X,Y,T)_1 = F_{n}(Z) * cos(\frac{3}{2}T)+(sech (X) * tanh \left( X\right)  * e^{-0.2Y^2}) *sin T+X^2*(\frac{Y^2}{100})$
 
 X,Y,T are meshgrids generated with three vectors x, y, t. Z is the sum of squared X and Y. n is the order of Hermite polynomial, and we may set it to be constant 2 here. The fraction $\frac{1}{100}$ is just for plotting purpose. All calculations involved are entry-wised calculations. They will generate various modes for the resulted tensor, where x, y and t will create spacial and temporal modes, respectively. An understanding of the shape and pattern of these component factor will provide context for results from tensor decomposition. 
