@@ -28,7 +28,7 @@ Here is an example graph comparing computational cost and loss against model ran
 - Overall, CP decomposition performs well extracting and visualizing different modes in a tensor by analyzing the decomposed matrices separately, and it can successfully extract the extra factor when a new one is added to the original data. But for a higher order tensor CP decomposition shows a much worse result compared with Tucker decomposition no matter in terms of loss or running time. 
 
 
-## References used in the paper (final draft in progress)
+## References used in the paper
 [1] Andersson, Claus A, and Rasmus Bro. “The N-Way Toolbox for MATLAB.” Chemometrics and Intelligent Laboratory Systems, vol. 52, no. 1, 2000, pp. 1–4.
 
 [2] Carroll, J. Douglas and Jih Jie Chang. “Analysis of individual differences in multidimensional scaling via an n-way generalization of “Eckart-Young” decomposition.” Psychometrika 35 1970, pp. 283-319.
